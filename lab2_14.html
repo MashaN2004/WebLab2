@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>lab2.14</title>
+    <style>
+        .content{
+            display: flex;
+            background-color: aqua;
+            border: solid 1px green;
+        }
+        .menu{
+            flex: 30% 1 0;
+        }
+        .menu ul{
+            margin: 0;
+            font-size: 14px;
+            background-color: bisque;
+            box-sizing: border-box;
+            padding: 5px 5px 5px 30px;
+        }
+        .text{
+            background-color: darkgray;
+            font-size: 13px;
+            flex: auto 1 1;
+            display: grid;
+            gap: 5px;
+        }
+        @media(max-width: 800px){
+            .content {
+                flex-direction: column;
+            }
+            .menu{
+                display: flex;
+                flex: 50px 0 0;
+                align-items: center;
+            }
+            .menu ul{
+                display: flex;
+                width: 100%;
+                list-style: none;
+                gap: 5px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <nav class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Houre </li>
+                <li>Direction</li>
+            </ul>
+        </nav>
+        <div class="text">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia, dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in, condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ac eleifend dui. Praesent malesuada sagittis odio vitae gravida. Donec sodales diam turpis, sed blandit ante bibendum sed. Vestibulum feugiat lectus a felis porttitor, id cursus purus ultricies. Nulla molestie pulvinar ipsum, eget fermentum urna ullamcorper non. In lacinia nisi at elit efficitur, ut congue nulla tempus. Donec et urna varius, efficitur felis at, blandit elit.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
